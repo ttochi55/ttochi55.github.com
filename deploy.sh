@@ -4,16 +4,10 @@
 set -e
 
 # docs: build
-# npm run docs:build
+npm run docs:build
 
 # docs: navigate into the build output directory
-# cd docs/.vuepress/dist
-
-# blog: build
-npm run blog:build
-
-# blog: navigate into the build output directory
-cd blog/.vuepress/dist
+cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
@@ -23,9 +17,10 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:ttochi55/ttochi55.github.io.git master
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+#git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+git push -f git@github.com:ttochi55.git master:gh-pages
 
 cd -
