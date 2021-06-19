@@ -3,11 +3,17 @@
 # abort on errors
 set -e
 
-# build
-npm run docs:build
+# docs: build
+# npm run docs:build
 
-# navigate into the build output directory
-cd docs/.vuepress/dist
+# docs: navigate into the build output directory
+# cd docs/.vuepress/dist
+
+# blog: build
+npm run blog:build
+
+# blog: navigate into the build output directory
+cd blog/.vuepress/dist
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
